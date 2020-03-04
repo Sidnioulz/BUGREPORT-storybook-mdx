@@ -1,0 +1,23 @@
+import { Meta, Source } from '@storybook/addon-docs/blocks';
+
+<Meta title="Bug Report" />
+
+```js
+import styled from '@xstyled/styled-components'
+import { margin } from '@xstyled/system'
+
+import _Bar from 'components/bar/Bar'
+
+export const Root = styled.div`
+	${margin}
+	display: inline-flex;
+	align-items: center;
+	...
+
+	${buggy}
+`
+```
+
+<Source language="jsx" code={"foo = styled`bla bla ${buggy}`"} />
+
+The end.
